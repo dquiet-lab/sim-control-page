@@ -2,28 +2,23 @@ import HorizontalRule from "@/components/HorizontalRule";
 import Link from "next/link";
 import TechnicalDetails from "./TechnicalDetails";
 import Interactions from "./Interactions";
+import KnownIssues from "./KnownIssues";
+import CollapsibleSection from "@/components/CollapsibleSection";
 
 export default function Home() {
   return (
     <main className="w-full flex flex-col max-w-6xl m-auto">
       {/* Introduction */}
-      <section className="grid justify-center w-full gap-3 px-3 pb-3">
+      <section className="grid justify-center w-full gap-5 px-3 pb-3">
         <p>
           This mod for The Sims 4 allows you to take control of any sim in the
           game, offering unprecedented flexibility and creativity in your
           gameplay.
         </p>
-        <Link
-          href="#downloads"
-          replace
-          className="m-auto w-64 p-3 bg-primary font-semibold rounded-lg text-center hover:bg-primary/50"
-        >
-          Go to Download Links
-        </Link>
       </section>
 
       {/* Mod features */}
-      <section className="grid w-full gap-3 p-3">
+      <section className="grid w-full gap-3 px-3 py-6">
         <h2 className="text-3xl font-bold">Mod Features</h2>
         <ul className="flex flex-col gap-3 list-disc ml-6">
           <li>
@@ -46,10 +41,9 @@ export default function Home() {
           </li>
         </ul>
       </section>
-      <HorizontalRule />
 
       {/* How it works */}
-      <section className="grid w-full gap-3 p-3">
+      <section className="grid w-full gap-3 px-3 py-6">
         <h2 className="text-3xl font-bold">How It Works</h2>
         <ul className="flex flex-col gap-3 list-disc ml-6">
           <li>
@@ -62,7 +56,7 @@ export default function Home() {
           <li>
             <h3 className="font-semibold">Activation</h3>
             <p>
-              Click on any non-playable Sim and select the new &quot;Add to
+              Click on any non-playable sim and select the new &quot;Add to
               Selectable Sims&quot; option from the Sim Control Manager category
               in the pie menu.
             </p>
@@ -70,17 +64,17 @@ export default function Home() {
           <li>
             <h3 className="font-semibold">Gameplay</h3>
             <p>
-              Once added, the sim is fully controllable, allowing you to direct
-              their actions, change their outfits, manage their needs, assist to
-              their career, and all the things that you want.
+              Once added, the sim becomes fully controllable, allowing you to
+              direct their actions, change outfits, manage needs, assist with
+              their career, and perform all the functions available to a
+              playable sim.
             </p>
           </li>
         </ul>
       </section>
-      <HorizontalRule />
 
       {/* Benefits */}
-      <section className="grid w-full gap-3 p-3">
+      <section className="grid w-full gap-3 px-3 py-6">
         <h2 className="text-3xl font-bold">Benefits</h2>
         <ul className="flex flex-col gap-3 list-disc ml-6">
           <li>
@@ -107,14 +101,14 @@ export default function Home() {
           <li>
             <h3 className="font-semibold">Lightweight</h3>
             <p>
-              This mod does not add buffs, traits, or affordances to any Sim.
+              This mod does not add buffs, traits, or affordances to any sim.
             </p>
           </li>
           <li>
-            <h3 className="font-semibold">Very Fast</h3>
+            <h3 className="font-semibold">Fast</h3>
             <p>
-              Uses custom interactions and cached tests to prevent delays in
-              loading the pie menu.
+              Utilize custom interactions and cached tests to prevent delays
+              when loading the pie menu.
             </p>
           </li>
           <li>
@@ -125,14 +119,9 @@ export default function Home() {
           </li>
         </ul>
       </section>
-      <HorizontalRule />
-
-      {/* Interactions */}
-      <Interactions />
-      <HorizontalRule />
 
       {/* Demo */}
-      <section className="grid w-full gap-3 p-3">
+      <section className="grid w-full gap-3 px-3 py-6">
         <h2 className="text-3xl font-bold">Demo</h2>
         <iframe
           width="420"
@@ -143,126 +132,80 @@ export default function Home() {
       </section>
       <HorizontalRule />
 
+      {/* Interactions */}
+      <Interactions />
+
       {/* Technical Details */}
       <TechnicalDetails />
-      <HorizontalRule />
 
       {/* Issues */}
-      <section className="grid w-full gap-3 p-3">
-        <h2 className="text-3xl font-bold">Known Issues</h2>
-        <ul className="flex flex-col gap-3 list-disc ml-6">
-          <li>
-            When you control a Sim who is a Stay Over Guest, they are treated as
-            if they are vacationing on a residential lot belonging to another
-            Household. You may see some interactions that normally appear during
-            vacations, such as &quot;Go To Lodging&quot;.
-          </li>
-          <li>
-            When a Sim is on vacation or is part of a Stay Over group and
-            decides to visit a different area from where they are staying, the
-            &apos;Go To Lodging&apos; interaction icon will never disappear from
-            the Sim&apos;s portrait in the skewer. This is a bug present in the
-            unmodified game.
-          </li>
-          <li>
-            When you control non-playable sims within the lot where they live,
-            interactions that should not be available between members of the
-            same household may appear. An example is &quot;Ask to be New
-            Roommate&quot;.&nbsp;
-            <span className="text-green-600">Fix in progress.</span>
-          </li>
-          <li>
-            When controlling a sim from another Household, they can use
-            interactions that shouldn&apos;t be available outside the lot where
-            they live. An example of this is the mobile phone interactions for
-            adopting a pet or a child.&nbsp;
-            <span className="text-green-600">Fix in progress.</span>
-          </li>
-          <li>
-            No major issues were detected when using a Sim from another
-            Household and they decide to adopt a child. If a baby is adopted
-            outside the home, they will appear on the lot, and the parent
-            won&apos;t be able to use the interaction to return home. Everything
-            should be resolved by leaving the area, but more testing is needed
-            to ensure it doesn&apos;t cause future problems.&nbsp;
-            <span className="text-yellow-700">
-              It requires further investigation.
-            </span>
-          </li>
-          <li>
-            When adopting a pet while controlling a Sim from another Household,
-            the pet will be added to the active Household, not the Household of
-            the controlled Sim. For example, if you are playing with Household A
-            and control a Sim from Household B while they are at home, if this
-            Sim adopts a cat, the cat will be added to Household A. I recommend
-            not saving the game after doing this until you can confirm that
-            there are no additional issues.&nbsp;
-            <span className="text-yellow-700">
-              It requires further investigation.
-            </span>
-          </li>
-        </ul>
-      </section>
-      <HorizontalRule />
+      <KnownIssues />
 
       {/* Acknowledgments  */}
       <section className="grid w-full gap-3 p-3">
-        <h2 className="text-3xl font-bold">Acknowledgments</h2>
-        <ul className="flex flex-col gap-3 list-disc ml-6">
-          <li>
-            <h3 className="font-semibold">
-              <a href="https://github.com/TitanNano/TS4ControlAnySim">
-                Control Any Sim
-              </a>
-              &nbsp;by <a href="https://github.com/TitanNano">TitanNano</a>
-            </h3>
-            <p>
-              I took a lot of inspiration from their mod. Unfortunately, the
-              author had been inactive for a long time and did not update their
-              mod. This is why I started developing my own version that is free
-              of issues. I am really grateful, as their repository helped me see
-              where to start. <br />
-              Sim Control Hub shares some functions with Control Any Sim but
-              takes a more in-depth and complex approach. I had to start from
-              scratch to ensure that the Sims managed by this mod have
-              absolutely all the features of a playable Sim, which has
-              significantly increased the complexity of this mod.
-              <br />
-              Recently, the author became active again and updated their mod; I
-              recommend checking it out and trying it:
-              <br />
+        <CollapsibleSection title="Acknowledgments">
+          <ul className="flex flex-col gap-3 list-disc ml-6">
+            <li>
+              <h3 className="font-semibold">
+                <a href="https://github.com/TitanNano/TS4ControlAnySim">
+                  Control Any Sim
+                </a>
+                &nbsp;by <a href="https://github.com/TitanNano">TitanNano</a>
+              </h3>
+              <p>
+                I took inspiration from this mod. Since the author hadn’t
+                updated it for a long time, I started developing my own version
+                from scratch. Recently, this mod received some updates, so I
+                recommend downloading and trying it out.
+              </p>
+              <p>
+                Sim Control Hub shares some functions with Control Any Sim;
+                however, I decided to take a deeper approach, treating the added
+                non-playable sims as players and retaining all their
+                functionalities. This results in greater complexity in the
+                source code and an increase in the number of injections needed
+                in the game.
+              </p>
               <a
                 href="https://github.com/TitanNano/TS4ControlAnySim"
                 className="font-semibold text-blue-500 hover:text-blue-200"
               >
                 TS4ControlAnySim on GitHub
               </a>
-            </p>
-          </li>
-          <li>
-            <h3 className="font-semibold">Creator Musings</h3>
-            <p>
-              I am very grateful to the Creator Musings community on Discord.
-              All the members are amazing and willing to help with anything.
-              They guided me in solving various problems I encountered while
-              developing this mod.
-              <br />
-              <a
-                href="https://discordbotlist.com/servers/creator-musings-605863047654801428"
-                className="font-semibold text-blue-500 hover:text-blue-200"
-              >
-                Creator Musing
-              </a>
-            </p>
-          </li>
-        </ul>
+            </li>
+            <li>
+              <h3 className="font-semibold">Creator Musings</h3>
+              <p>
+                I am very grateful to the Creator Musings community on Discord.
+                All the members are amazing and willing to help with anything.
+                They guided me in solving various problems I encountered while
+                developing this mod.
+                <br />
+                <a
+                  href="https://discordbotlist.com/servers/creator-musings-605863047654801428"
+                  className="font-semibold text-blue-500 hover:text-blue-200"
+                >
+                  Creator Musing
+                </a>
+              </p>
+            </li>
+          </ul>
+        </CollapsibleSection>
       </section>
       <HorizontalRule />
 
       {/* Downloads */}
-      <section className="grid w-full gap-3 p-3" id="downloads">
-        <h2 className="text-3xl font-bold">Download Links</h2>
-        <p>Coming soon...</p>
+      <section
+        className="grid w-full gap-3 px-3 py-5 justify-center"
+        id="downloads"
+      >
+        <h2 className="text-3xl font-bold text-center">Download Links</h2>
+        <a
+          href="https://www.mediafire.com/file/pzy79qvrbceggd4/sim_control_hub.zip/file"
+          className="font-semibold hover:shadow-lg p-3 bg-primary rounded-xl"
+        >
+          Sim Control Hub V1.0.0 - Date: 08-27-2024
+        </a>
       </section>
     </main>
   );

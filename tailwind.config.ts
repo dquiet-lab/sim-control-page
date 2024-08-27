@@ -16,6 +16,10 @@ const config: Config = {
       colors: {
         primary: "var(--primary-color)",
       },
+      transitionProperty: {
+        height: "height",
+        spacing: "margin, padding",
+      },
     },
   },
   plugins: [],
