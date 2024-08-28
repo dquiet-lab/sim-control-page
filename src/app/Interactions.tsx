@@ -23,14 +23,16 @@ const Interactions = () => {
             </p>
             <p>
               If the Sim is part of a specific situation (e.g., a hired
-              mixologist), they will return to their previous situation without
+              mixologist), they will return to their previous role without
               significant changes.
             </p>
             <p>
-              If the Sim is not part of any situation and is within the active
-              lot zone, they will be added to the default situation of that
-              zone. Conversely, if the Sim is outside the lot, they will return
-              home after a few minutes.
+              If the Sim is not involved in any situation (i.e., does not have a
+              role such as Stall Vendor) and is within the active lot, they will
+              be assigned a default role based on the lot type. For example, if
+              the lot is a cafe, the Sim will assume the role of 'Cafe
+              Customer.' If the Sim is outside the lot, they will return home
+              after a few minutes.
             </p>
           </li>
           <li>

@@ -4,6 +4,7 @@ import TechnicalDetails from "./TechnicalDetails";
 import Interactions from "./Interactions";
 import KnownIssues from "./KnownIssues";
 import CollapsibleSection from "@/components/CollapsibleSection";
+import ReleaseNotes from "./ReleaseNotes";
 
 export default function Home() {
   return (
@@ -147,10 +148,16 @@ export default function Home() {
           <ul className="flex flex-col gap-3 list-disc ml-6">
             <li>
               <h3 className="font-semibold">
-                <a href="https://github.com/TitanNano/TS4ControlAnySim">
+                <a
+                  href="https://github.com/TitanNano/TS4ControlAnySim"
+                  className="link"
+                >
                   Control Any Sim
                 </a>
-                &nbsp;by <a href="https://github.com/TitanNano">TitanNano</a>
+                &nbsp;by{" "}
+                <a href="https://github.com/TitanNano" className="link">
+                  TitanNano
+                </a>
               </h3>
               <p>
                 I took inspiration from this mod. Since the author hadn’t
@@ -166,32 +173,31 @@ export default function Home() {
                 source code and an increase in the number of injections needed
                 in the game.
               </p>
-              <a
-                href="https://github.com/TitanNano/TS4ControlAnySim"
-                className="font-semibold text-blue-500 hover:text-blue-200"
-              >
-                TS4ControlAnySim on GitHub
-              </a>
             </li>
             <li>
-              <h3 className="font-semibold">Creator Musings</h3>
+              <h3 className="font-semibold">
+                <a
+                  href="https://discordbotlist.com/servers/creator-musings-605863047654801428"
+                  className="link"
+                >
+                  Creator Musings
+                </a>{" "}
+              </h3>
               <p>
                 I am very grateful to the Creator Musings community on Discord.
                 All the members are amazing and willing to help with anything.
                 They guided me in solving various problems I encountered while
                 developing this mod.
                 <br />
-                <a
-                  href="https://discordbotlist.com/servers/creator-musings-605863047654801428"
-                  className="font-semibold text-blue-500 hover:text-blue-200"
-                >
-                  Creator Musing
-                </a>
               </p>
             </li>
           </ul>
         </CollapsibleSection>
       </section>
+
+      {/* Release Notes */}
+      <ReleaseNotes />
+
       <HorizontalRule />
 
       {/* Downloads */}
@@ -199,12 +205,12 @@ export default function Home() {
         className="grid w-full gap-3 px-3 py-5 justify-center"
         id="downloads"
       >
-        <h2 className="text-3xl font-bold text-center">Download Links</h2>
+        <h2 className="text-3xl font-bold text-center">Download Latest</h2>
         <a
-          href="https://www.mediafire.com/file/pzy79qvrbceggd4/sim_control_hub.zip/file"
+          href="https://www.mediafire.com/file/bi7upnhbbvbkzah/sim_control_hub_v1.1-beta.1.zip/file"
           className="font-semibold hover:shadow-lg p-3 bg-primary rounded-xl"
         >
-          Sim Control Hub V1.0.0 - Date: 08-27-2024
+          Sim Control Hub V1.1-beta.1 - 08-28-2024
         </a>
       </section>
     </main>

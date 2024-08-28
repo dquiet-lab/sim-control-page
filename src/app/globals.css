@@ -48,3 +48,9 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer components {
+  .link {
+    @apply border-b-[1px] border-b-blue-500 hover:border-b-blue-300 hover:border-b-[2px];
+  }
+}
