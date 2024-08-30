@@ -149,7 +149,7 @@ export default function Home() {
             <li>
               <h3 className="font-semibold">
                 <a
-                  href="https://github.com/TitanNano/TS4ControlAnySim"
+                  href="https://modthesims.info/d/634595/control-any-sim-v1-2-6.html"
                   className="link"
                 >
                   Control Any Sim
@@ -207,10 +207,10 @@ export default function Home() {
       >
         <h2 className="text-3xl font-bold text-center">Download Latest</h2>
         <a
-          href="https://www.mediafire.com/file/bi7upnhbbvbkzah/sim_control_hub_v1.1-beta.1.zip/file"
+          href="https://www.mediafire.com/file/zerhipioldfwzmj/sim_control_hub_v1.1.0.zip/file"
           className="font-semibold hover:shadow-lg p-3 bg-primary rounded-xl"
         >
-          Sim Control Hub V1.1-beta.1 - 08-28-2024
+          Sim Control Hub V1.1.0 - 08-30-2024
         </a>
       </section>
     </main>

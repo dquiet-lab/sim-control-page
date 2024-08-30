@@ -18,7 +18,7 @@ const CollapsibleSection = ({ title, children }: Props) => {
     <Disclosure>
       {({ open }) => (
         <div className="rounded-xl group">
-          <DisclosureButton className="w-full flex justify-between items-center p-3 rounded-xl bg-[#2c3841] z-20 relative">
+          <DisclosureButton className="w-full flex justify-between items-center p-3 rounded-xl bg-[#2c3841] z-20 relative hover:bg-[#3b4955]">
             <h2 className="text-xl md:text-3xl font-bold">{title}</h2>
             <FiArrowDown
               className={`text-xl ${open && "rotate-180"} transition-all`}
