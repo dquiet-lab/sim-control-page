@@ -1,5 +1,4 @@
 import HorizontalRule from "@/components/HorizontalRule";
-import Link from "next/link";
 import TechnicalDetails from "./TechnicalDetails";
 import Interactions from "./Interactions";
 import KnownIssues from "./KnownIssues";
@@ -58,7 +57,7 @@ export default function Home() {
             <h3 className="font-semibold">Activation</h3>
             <p>
               Click on any non-playable sim and select the new &quot;Add to
-              Selectable Sims&quot; option from the Sim Control Manager category
+              Selectable Sims&quot; option from the Sim Control Hub category
               in the pie menu.
             </p>
           </li>
@@ -66,8 +65,8 @@ export default function Home() {
             <h3 className="font-semibold">Gameplay</h3>
             <p>
               Once added, the sim becomes fully controllable, allowing you to
-              direct their actions, change outfits, manage needs, assist with
-              their career, and perform all the functions available to a
+              direct their actions, change their outfits, manage their needs,
+              send them to work, and perform all functions available to a
               playable sim.
             </p>
           </li>
@@ -207,7 +206,7 @@ export default function Home() {
       >
         <h2 className="text-3xl font-bold text-center">Download Latest</h2>
         <a
-          href="https://www.mediafire.com/file/zerhipioldfwzmj/sim_control_hub_v1.1.0.zip/file"
+          href="https://www.mediafire.com/file/i0xiaer0gnkzwyh/DQuiet_SimControlHub_v1.1.1.zip/file"
           className="font-semibold hover:shadow-lg p-3 bg-primary rounded-xl"
         >
           Sim Control Hub V1.1.0 - 08-30-2024

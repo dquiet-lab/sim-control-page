@@ -29,9 +29,8 @@ const ReleaseNotes = () => {
             </h3>
             <p>
               The ability to add Dogs, Cats, and Horses to the list of
-              selectable Sims has been added.
-              <br />
-              They can be controlled using the cheat code
+              selectable Sims has been added. They can be controlled using the
+              cheat code
               <i> 'pets.toggle_selectable_pets'</i>. This command can be enabled
               using&nbsp;
               <a
@@ -107,6 +106,32 @@ const ReleaseNotes = () => {
                 a Rabbit Hole from which they could not exit.
               </li>
               <li>Several minor bugs were fixed.</li>
+            </ul>
+          </li>
+          <li>
+            <h3>
+              V1.1.1 - 08-31-2024 -{" "}
+              <a
+                href="https://www.mediafire.com/file/i0xiaer0gnkzwyh/DQuiet_SimControlHub_v1.1.1.zip/file"
+                className="link font-semibold"
+              >
+                Download
+              </a>
+            </h3>
+            <ul className="list-disc list-inside">
+              <li>
+                The ‘Ask to be New Roommate’ interaction now verifies that the
+                participating Sims do not belong to the same household.
+                Roommates are fully compatible. A Sim added by this mod can ask
+                an NPC Sim (who should not be selectable at the time of using
+                the interaction) to be a new roommate, and they will be
+                correctly added to the household of the Sim who initiated the
+                interaction.
+              </li>
+              <li>
+                A large part of the mod’s source code was refactored. The
+                logging system was improved to detect potential issues within
+              </li>
             </ul>
           </li>
         </ul>

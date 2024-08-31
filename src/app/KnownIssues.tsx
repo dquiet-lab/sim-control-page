@@ -6,22 +6,6 @@ const KnownIssues = () => {
       <CollapsibleSection title="Known Issues">
         <ol className="flex flex-col gap-3 list-decimal ml-6">
           <li>
-            When you add a sim to the Skewer who is already in the area, the
-            information in the Aspiration and Skills Panels might not appear
-            immediately. These panels will remain empty until the sim completes
-            their current animation. The Skills Panel will update automatically,
-            but for the Aspiration Panel, you’ll need to switch to another Sim
-            to refresh the UI. Keep in mind that this is only a visual glitch.
-            <br />
-            <i className="text-green-400">
-              Partially fixed. When adding a sim present in the area to the
-              skewer, a custom interaction will be pushed to the sim’s
-              interaction queue, forcing the UI to reload after two minutes in
-              the game. It should be compatible with almost all interactions and
-              prevent their cancellation.
-            </i>
-          </li>
-          <li>
             When you control a sim who is a Stay Over Guest, they are treated as
             if they are vacationing on a residential lot belonging to another
             Household. You may see some interactions that normally appear during
@@ -35,11 +19,45 @@ const KnownIssues = () => {
             unmodified game.
           </li>
           <li>
-            When controlling a selectable sim added by this mod within their
-            home lot, you may notice interactions that should not be available
-            between household members. For instance, the 'Ask to Be New
-            Roommate' interaction might appear. <br />
-            <i className="text-green-400">Fix in progress.</i>
+            <p className="line-through">
+              When you add a sim to the Skewer who is already in the area, the
+              information in the Aspiration and Skills Panels might not appear
+              immediately. These panels will remain empty until the sim
+              completes their current animation. The Skills Panel will update
+              automatically, but for the Aspiration Panel, you’ll need to switch
+              to another Sim to refresh the UI. Keep in mind that this is only a
+              visual glitch.
+            </p>
+            <p className="text-green-400">
+              Partially fixed. When adding a sim present in the area to the
+              skewer, a custom interaction will be pushed to the sim’s
+              interaction queue, forcing the UI to reload after two minutes in
+              the game. It should be compatible with almost all interactions and
+              prevent their cancellation.
+            </p>
+          </li>
+          <li>
+            <p className="line-through">
+              When controlling a selectable sim added by this mod within their
+              home lot, you may notice interactions that should not be available
+              between household members. For instance, the 'Ask to Be New
+              Roommate' interaction might appear.
+            </p>
+            <p className="text-green-400 italic">
+              Fixed. The ‘Ask to be New Roommate’ interaction now verifies that
+              the participating Sims do not belong to the same household. Please
+              report if there is another interaction with this behavior.
+            </p>
+          </li>
+          <li>
+            <p>
+              When one or more selectable Sims are added using this mod and a
+              member of the active household dies, leaving no more Sims in the
+              household, several problems and exceptions occur. Please avoid
+              this situation at all costs, and do not attempt to save the game
+              if this happens.
+            </p>
+            <p className="text-green-400">Fix in progress</p>
           </li>
           <li>
             No significant issues were detected when adopting a child while
@@ -57,7 +75,7 @@ const KnownIssues = () => {
             the game until it’s confirmed that there are no additional issues.
             <br />
             <i className="text-yellow-400">
-              It requires further investigation and reports.
+              It requires further testing and reports.
             </i>
           </li>
         </ol>
