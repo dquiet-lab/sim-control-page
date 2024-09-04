@@ -57,8 +57,8 @@ export default function Home() {
             <h3 className="font-semibold">Activation</h3>
             <p>
               Click on any non-playable sim and select the new &quot;Add to
-              Selectable Sims&quot; option from the Sim Control Hub category
-              in the pie menu.
+              Selectable Sims&quot; option from the Sim Control Hub category in
+              the pie menu.
             </p>
           </li>
           <li>
@@ -206,10 +206,10 @@ export default function Home() {
       >
         <h2 className="text-3xl font-bold text-center">Download Latest</h2>
         <a
-          href="https://www.mediafire.com/file/i0xiaer0gnkzwyh/DQuiet_SimControlHub_v1.1.1.zip/file"
+          href="https://www.mediafire.com/file/phxhcfduz2qjmc1/DQuiet_SimControlHub_V1.1.2.zip/file"
           className="font-semibold hover:shadow-lg p-3 bg-primary rounded-xl"
         >
-          Sim Control Hub V1.1.0 - 08-30-2024
+          Sim Control Hub V1.1.2 - 09-04-2024
         </a>
       </section>
     </main>

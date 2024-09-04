@@ -134,6 +134,35 @@ const ReleaseNotes = () => {
               </li>
             </ul>
           </li>
+          <li>
+            <h3>
+              V1.1.2 - 09-04-2024 -{" "}
+              <a
+                href="https://www.mediafire.com/file/phxhcfduz2qjmc1/DQuiet_SimControlHub_V1.1.2.zip/file"
+                className="link font-semibold"
+              >
+                Download
+              </a>
+            </h3>
+            <ul className="list-disc list-inside">
+              <li>
+                A bug was fixed that prevented an added Sim from entering the
+                active household’s lot after using the ‘Visit’ interaction.
+              </li>
+              <li>
+                A notification was added to inform that a Sim will take a day
+                off from their career when performing any task or profession in
+                the current area. Additionally, the method for taking a career
+                day off has been improved. It now uses a PTO without deducting
+                accumulated days, impacting statistics, or affecting work
+                performance.
+              </li>
+              <li>
+                The mod menu has been moved to the Actions category in the Pie
+                Menu.
+              </li>
+            </ul>
+          </li>
         </ul>
       </CollapsibleSection>
     </section>

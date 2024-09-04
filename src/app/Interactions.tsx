@@ -44,7 +44,7 @@ const Interactions = () => {
               Show in Cheat Menu / Show in Pie Menu
             </h3>
             <p>
-              Allows hiding this mod in the Pie Menu or Cheat Menu (you must
+              Allows you to hide or unhide this mod in the Cheat menu (you must
               activate the ‘testingcheats on’ command and access it by Shift +
               Clicking on any Sim).
             </p>
