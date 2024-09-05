@@ -163,6 +163,26 @@ const ReleaseNotes = () => {
               </li>
             </ul>
           </li>
+          <li>
+            <h3>
+              V1.1.3 - 09-05-2024 -{" "}
+              <a
+                href="https://www.mediafire.com/file/jst72tl7s0dohpm/DQuiet_SimControlHub_V1.1.3.zip/file"
+                className="link font-semibold"
+              >
+                Download
+              </a>
+            </h3>
+            <ul>
+              <li className="list-disc ml-5">
+                <p>
+                  Hotfix to resolve a LastException error occurring during game
+                  load. This is a minor issue in the Logger that does not affect
+                  the player.
+                </p>
+              </li>
+            </ul>
+          </li>
         </ul>
       </CollapsibleSection>
     </section>

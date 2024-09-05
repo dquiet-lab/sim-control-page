@@ -57,8 +57,8 @@ export default function Home() {
             <h3 className="font-semibold">Activation</h3>
             <p>
               Click on any non-playable sim and select the new &quot;Add to
-              Selectable Sims&quot; option from the Sim Control Hub category in
-              the pie menu.
+              Selectable Sims&quot; option from the{" "}
+              <i>Actions {">"} Sim Control Hub category</i> in the pie menu.
             </p>
           </li>
           <li>
@@ -206,10 +206,22 @@ export default function Home() {
       >
         <h2 className="text-3xl font-bold text-center">Download Latest</h2>
         <a
-          href="https://www.mediafire.com/file/phxhcfduz2qjmc1/DQuiet_SimControlHub_V1.1.2.zip/file"
-          className="font-semibold hover:shadow-lg p-3 bg-primary rounded-xl"
+          href="https://www.mediafire.com/file/jst72tl7s0dohpm/DQuiet_SimControlHub_V1.1.3.zip/file"
+          className="font-semibold hover:shadow-lg p-3 bg-primary rounded-xl text-center"
         >
-          Sim Control Hub V1.1.2 - 09-04-2024
+          Sim Control Hub V1.1.3 - MediaFire
+        </a>
+        <a
+          href="https://www.curseforge.com/sims4/mods/sim-control-hub"
+          className="font-semibold hover:shadow-lg p-3 w-ming bg-black text-white rounded-xl text-center border-white"
+        >
+          View on CurseForge
+        </a>
+        <a
+          className="font-semibold hover:shadow-lg p-3 w-ming bg-gray-700 text-white rounded-xl text-center border-white cursor-not-allowed"
+          aria-disabled
+        >
+          Mod The Sims. Coming soon...
         </a>
       </section>
     </main>
