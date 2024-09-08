@@ -206,10 +206,10 @@ export default function Home() {
       >
         <h2 className="text-3xl font-bold text-center">Download Latest</h2>
         <a
-          href="https://www.mediafire.com/file/jst72tl7s0dohpm/DQuiet_SimControlHub_V1.1.3.zip/file"
+          href="https://www.mediafire.com/file/r1c46ede1qxulxb/DQuiet_SimControlHub_v1.1.4.zip/file"
           className="font-semibold hover:shadow-lg p-3 bg-primary rounded-xl text-center"
         >
-          Sim Control Hub V1.1.3 - MediaFire
+          Sim Control Hub V1.1.4 - MediaFire
         </a>
         <a
           href="https://www.curseforge.com/sims4/mods/sim-control-hub"

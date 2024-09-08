@@ -173,13 +173,48 @@ const ReleaseNotes = () => {
                 Download
               </a>
             </h3>
-            <ul>
-              <li className="list-disc ml-5">
+            <ul className="list-disc ml-5">
+              <li>
                 <p>
                   Hotfix to resolve a LastException error occurring during game
                   load. This is a minor issue in the Logger that does not affect
                   the player.
                 </p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>
+              V1.1.4 - 09-08-2024 -{" "}
+              <a
+                href="https://www.mediafire.com/file/r1c46ede1qxulxb/DQuiet_SimControlHub_v1.1.4.zip/file"
+                className="link font-semibold"
+              >
+                Download
+              </a>
+            </h3>
+            <ul className="list-disc ml-5">
+              <li>
+                Fixed a rare bug that caused a LastException when initializing a
+                zone because the mod attempted to access a non-existent sim
+                instance.
+              </li>
+              <li>
+                Fixed an error that caused an exception when a homeless Sim was
+                added to the list of selectable Sims and a new zone was
+                initialized. This was due to an attempt to load a non-existent
+                zone.
+              </li>
+              <li>
+                The mod’s persistence system has been unified. It now uses a
+                single JSON file to save configurations and states. The CFG file
+                can be deleted as it is no longer necessary.
+              </li>
+              <li>
+                Various fixes in the logging system of the mod. The mod will no
+                longer create a .log file unless an internal error occurs. You
+                can delete the .log file if you don’t want it to take up
+                unnecessary space.
               </li>
             </ul>
           </li>
