@@ -11,9 +11,8 @@ export default function Home() {
       {/* Introduction */}
       <section className="grid justify-center w-full gap-5 px-3 pb-3">
         <p>
-          This mod for The Sims 4 allows you to take control of any sim in the
-          game, offering unprecedented flexibility and creativity in your
-          gameplay.
+          This mod for The Sims 4 allows you to take control of any sim in the game,
+          offering unprecedented flexibility and creativity in your gameplay.
         </p>
       </section>
 
@@ -24,8 +23,8 @@ export default function Home() {
           <li>
             <h3 className="font-semibold">Play as any sim</h3>
             <p>
-              Seamlessly switch control between your active household sims and
-              any other sim in the game world.
+              Seamlessly switch control between your active household sims and any other
+              sim in the game world.
             </p>
           </li>
           <li>
@@ -35,8 +34,8 @@ export default function Home() {
           <li>
             <h3 className="font-semibold">Customizable menus</h3>
             <p>
-              You can hide this mod in the Shift + Click menu or access it via
-              the Relationship Panel
+              You can hide this mod in the Shift + Click menu or access it via the
+              Relationship Panel
             </p>
           </li>
         </ul>
@@ -49,25 +48,24 @@ export default function Home() {
           <li>
             <h3 className="font-semibold">Installation</h3>
             <p>
-              Simply download the mod, place it in your mods folder, and enable
-              script mods in your game settings.
+              Simply download the mod, place it in your mods folder, and enable script
+              mods in your game settings.
             </p>
           </li>
           <li>
             <h3 className="font-semibold">Activation</h3>
             <p>
-              Click on any non-playable sim and select the new &quot;Add to
-              Selectable Sims&quot; option from the{" "}
-              <i>Actions {">"} Sim Control Hub category</i> in the pie menu.
+              Click on any non-playable sim and select the new &quot;Add to Selectable
+              Sims&quot; option from the <i>Actions {">"} Sim Control Hub category</i> in
+              the pie menu.
             </p>
           </li>
           <li>
             <h3 className="font-semibold">Gameplay</h3>
             <p>
-              Once added, the sim becomes fully controllable, allowing you to
-              direct their actions, change their outfits, manage their needs,
-              send them to work, and perform all functions available to a
-              playable sim.
+              Once added, the sim becomes fully controllable, allowing you to direct their
+              actions, change their outfits, manage their needs, send them to work, and
+              perform all functions available to a playable sim.
             </p>
           </li>
         </ul>
@@ -80,42 +78,38 @@ export default function Home() {
           <li>
             <h3 className="font-semibold">Enhanced Gameplay</h3>
             <p>
-              Experience the game from new perspectives by controlling different
-              sims and situations.
+              Experience the game from new perspectives by controlling different sims and
+              situations.
             </p>
           </li>
           <li>
             <h3 className="font-semibold">Storytelling</h3>
             <p>
-              Create intricate storylines by directly influencing the actions
-              and decisions of all sims.
+              Create intricate storylines by directly influencing the actions and
+              decisions of all sims.
             </p>
           </li>
           <li>
             <h3 className="font-semibold">Flexibility</h3>
             <p>
-              Perfect for managing multiple households or intricate social
-              dynamics within your game.
+              Perfect for managing multiple households or intricate social dynamics within
+              your game.
             </p>
           </li>
           <li>
             <h3 className="font-semibold">Lightweight</h3>
-            <p>
-              This mod does not add buffs, traits, or affordances to any sim.
-            </p>
+            <p>This mod does not add buffs, traits, or affordances to any sim.</p>
           </li>
           <li>
             <h3 className="font-semibold">Fast</h3>
             <p>
-              Utilize custom interactions and cached tests to prevent delays
-              when loading the pie menu.
+              Utilize custom interactions and cached tests to prevent delays when loading
+              the pie menu.
             </p>
           </li>
           <li>
             <h3 className="font-semibold">Safe to remove</h3>
-            <p>
-              You can remove this mod at any time without leaving any trace.
-            </p>
+            <p>You can remove this mod at any time without leaving any trace.</p>
           </li>
         </ul>
       </section>
@@ -159,18 +153,17 @@ export default function Home() {
                 </a>
               </h3>
               <p>
-                I took inspiration from this mod. Since the author hadn’t
-                updated it for a long time, I started developing my own version
-                from scratch. Recently, this mod received some updates, so I
-                recommend downloading and trying it out.
+                I took inspiration from this mod. Since the author hadn’t updated it for a
+                long time, I started developing my own version from scratch. Recently,
+                this mod received some updates, so I recommend downloading and trying it
+                out.
               </p>
               <p>
-                Sim Control Hub shares some functions with Control Any Sim;
-                however, I decided to take a deeper approach, treating the added
-                non-playable sims as players and retaining all their
-                functionalities. This results in greater complexity in the
-                source code and an increase in the number of injections needed
-                in the game.
+                Sim Control Hub shares some functions with Control Any Sim; however, I
+                decided to take a deeper approach, treating the added non-playable sims as
+                players and retaining all their functionalities. This results in greater
+                complexity in the source code and an increase in the number of injections
+                needed in the game.
               </p>
             </li>
             <li>
@@ -183,12 +176,19 @@ export default function Home() {
                 </a>{" "}
               </h3>
               <p>
-                I am very grateful to the Creator Musings community on Discord.
-                All the members are amazing and willing to help with anything.
-                They guided me in solving various problems I encountered while
-                developing this mod.
+                I am very grateful to the Creator Musings community on Discord. All the
+                members are amazing and willing to help with anything. They guided me in
+                solving various problems I encountered while developing this mod.
                 <br />
               </p>
+            </li>
+            <li>
+              <h3 className="font-semibold">
+                <a href="https://luniversims.fr/profile/44799-heidi137/" className="link">
+                  heidi137 - luniversims.fr
+                </a>{" "}
+              </h3>
+              <p>Acknowledgment for the French translation of the mod. Thank you.</p>
             </li>
           </ul>
         </CollapsibleSection>
@@ -200,16 +200,13 @@ export default function Home() {
       <HorizontalRule />
 
       {/* Downloads */}
-      <section
-        className="grid w-full gap-3 px-3 py-5 justify-center"
-        id="downloads"
-      >
+      <section className="grid w-full gap-3 px-3 py-5 justify-center" id="downloads">
         <h2 className="text-3xl font-bold text-center">Download Latest</h2>
         <a
-          href="https://www.mediafire.com/file/r1c46ede1qxulxb/DQuiet_SimControlHub_v1.1.4.zip/file"
+          href="https://www.mediafire.com/file/xuqcndp1gjichaw/DQuiet_SimControlHub_V1.2.0.zip/file"
           className="font-semibold hover:shadow-lg p-3 bg-primary rounded-xl text-center"
         >
-          Sim Control Hub V1.1.4 - MediaFire
+          Sim Control Hub V1.2.0 - MediaFire
         </a>
         <a
           href="https://www.curseforge.com/sims4/mods/sim-control-hub"
@@ -218,10 +215,11 @@ export default function Home() {
           View on CurseForge
         </a>
         <a
-          className="font-semibold hover:shadow-lg p-3 w-ming bg-gray-700 text-white rounded-xl text-center border-white cursor-not-allowed"
+          href="https://modthesims.info/download.php?t=686467"
+          className="font-semibold hover:shadow-lg p-3 w-ming bg-gray-700 text-white rounded-xl text-center border-white"
           aria-disabled
         >
-          Mod The Sims. Coming soon...
+          View on Mod The Sims
         </a>
       </section>
     </main>
