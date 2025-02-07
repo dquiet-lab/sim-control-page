@@ -203,10 +203,10 @@ export default function Home() {
       <section className="grid w-full gap-3 px-3 py-5 justify-center" id="downloads">
         <h2 className="text-3xl font-bold text-center">Download Latest</h2>
         <a
-          href="https://www.mediafire.com/file/xuqcndp1gjichaw/DQuiet_SimControlHub_V1.2.0.zip/file"
+          href="https://www.mediafire.com/file/wuwhpt9ay1znmge/DQuiet_SimControlHub_v1.3.0.7z/file"
           className="font-semibold hover:shadow-lg p-3 bg-primary rounded-xl text-center"
         >
-          Sim Control Hub V1.2.0 - MediaFire
+          Sim Control Hub V1.3.0 - MediaFire
         </a>
         <a
           href="https://www.curseforge.com/sims4/mods/sim-control-hub"
