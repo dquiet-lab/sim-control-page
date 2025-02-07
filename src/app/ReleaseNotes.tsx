@@ -7,204 +7,67 @@ const ReleaseNotes = () => {
         <ul className="flex flex-col gap-3 list-disc ml-6">
           <li>
             <h3>
-              V1.0.0 - 08-27-2024 -{" "}
+              V1.3.0 - 02-07-2025 -{" "}
               <a
-                href="https://www.mediafire.com/file/pzy79qvrbceggd4/sim_control_hub_v1.0.0.zip/file"
+                href="https://www.mediafire.com/file/wuwhpt9ay1znmge/DQuiet_SimControlHub_v1.3.0.7z/file"
                 className="link font-semibold"
               >
                 Download
               </a>
+              <ul className="list-disc ml-5">
+                <li>
+                  Part of the code has been updated to ensure better compatibility with
+                  the latest version of the game. PC: 1.112.519.1020 / Mac: 1.112.519.1220
+                </li>
+                <li>
+                  Travel Groups-related interactions have been removed from the Pie Menu
+                  and are now exclusively available in the Relationship Panel. This change
+                  not only reduces loading times for the Pie Menu but also resolves
+                  several issues previously associated with these interactions.
+                </li>
+                <li>
+                  Situation detection for each lot has been enhanced. The mod can now
+                  dynamically detect all available situations through the Zone Director,
+                  Open Street Director, and Venue Service. This allows the mod to add or
+                  remove Sims based on whether they are controlled by the player or not,
+                  ensuring smoother gameplay and better management of in-game scenarios.
+                </li>
+                <li>
+                  A minor bug causing internal exceptions within the mod when interacting
+                  with certain objects or animals in the Relationship Panel has been
+                  resolved. Examples of affected items include the Potty Mouth 2.0 talking
+                  toilet and Grim Deluxe Ascendant Crow.
+                </li>
+                <li>
+                  Fixed a minor bug where the active Sim would change when loading a new
+                  zone. Now, the active Sim will remain consistent during travel or zone
+                  loading.
+                </li>
+                <li>
+                  Several bugs related to careers and Rabbit Holes have been resolved.
+                </li>
+                <li>
+                  The Debug Mode has been improved to provide clearer and more descriptive
+                  messages. This update makes it easier to identify and troubleshoot
+                  potential bugs within the game, streamlining the debugging process for
+                  both developers and players.
+                </li>
+                <li>
+                  The code has been refactored and various minor bugs have been resolved
+                  to enhance the overall performance and stability of the mod. These
+                  changes aim to provide a smoother and more reliable experience for
+                  users. Additionally, an open-source version of the mod may be released
+                  in the future, allowing the community to contribute to its maintenance
+                  and development.
+                </li>
+                <li>
+                  In the coming days, I will release more updates to address issues and
+                  implement user-requested features. Additionally, I will review reported
+                  bugs. So far, I haven't encountered any major issues while using this
+                  mod.
+                </li>
+              </ul>
             </h3>
-            <p>First release</p>
-          </li>
-          <li>
-            <h3>
-              V1.1-beta.1 - 08-28-2024 -{" "}
-              <a
-                href="https://www.mediafire.com/file/bi7upnhbbvbkzah/sim_control_hub_v1.1-beta.1.zip/file"
-                className="link font-semibold"
-              >
-                Download
-              </a>
-            </h3>
-            <p>
-              The ability to add Dogs, Cats, and Horses to the list of selectable Sims has
-              been added. They can be controlled using the cheat code
-              <i> 'pets.toggle_selectable_pets'</i>. This command can be enabled
-              using&nbsp;
-              <a
-                href="https://www.patreon.com/posts/cheat-fix-for-22697405"
-                className="link"
-              >
-                TwistedMexi’s All Cheats
-              </a>
-              &nbsp;or&nbsp;
-              <a
-                href="https://modthesims.info/d/678890/selectable-pets-always.html"
-                className="link"
-              >
-                charitycodes Selectable Pets Always
-              </a>
-            </p>
-          </li>
-          <li>
-            <h3>
-              V1.1.0 - 08-30-2024 -{" "}
-              <a
-                href="https://www.mediafire.com/file/zerhipioldfwzmj/sim_control_hub_v1.1.0.zip/file"
-                className="link font-semibold"
-              >
-                Download
-              </a>
-            </h3>
-            <ul className="list-inside list-disc">
-              <li>
-                A problem with infinite loading screens was fixed when a homeless sim is
-                the last to leave the zone using the ‘Go Home’ interaction. This issue
-                occurred because the game attempted to load the sim’s home lot. Now, when
-                an added selectable sim leaves the zone, loading a new zone will be
-                avoided, allowing the player to switch control to another sim
-              </li>
-              <li>
-                A critical error that could halt the game and cause various exceptions was
-                fixed when an added selectable sim attended their career and the player
-                decided to change zones. This issue occurred because the AwayActionTracker
-                was not properly stopped, causing the career scheduler to attempt to
-                access unavailable information.
-              </li>
-              <li>
-                A problem was fixed where sims performing important tasks in the zone
-                would abandon them to attend their careers. Now, when it’s time for their
-                career to start, the workday will be skipped without any performance loss,
-                allowing the sim to complete any pending tasks in the zone
-              </li>
-              <li>
-                When a selectable sim present in the zone is added during work hours, the
-                workday will be skipped without any performance loss.
-              </li>
-              <li>
-                When a selectable sim who is not present in the zone is added during work
-                hours, they will automatically attend their career, making up for the lost
-                work hours. Consequently, they will not incur any performance or money
-                penalties.
-              </li>
-              <li>
-                There are certain generic careers intended solely for NPCs or homeless
-                sims, such as variations of Nanny, Barista, and Stall Vendor. These
-                careers previously caused issues that prevented these sims from performing
-                their tasks correctly in the active zone when they were added as
-                selectable sims, as they had to attend these careers. Now, these careers
-                will be ignored, and when it’s time for them to start, they will be
-                automatically canceled without any penalties. An example of this is the
-                Live in Services mod by LittleMsSam. The hired NPCs could not be
-                controlled properly as they would attend their career, entering a Rabbit
-                Hole from which they could not exit.
-              </li>
-              <li>Several minor bugs were fixed.</li>
-            </ul>
-          </li>
-          <li>
-            <h3>
-              V1.1.1 - 08-31-2024 -{" "}
-              <a
-                href="https://www.mediafire.com/file/i0xiaer0gnkzwyh/DQuiet_SimControlHub_v1.1.1.zip/file"
-                className="link font-semibold"
-              >
-                Download
-              </a>
-            </h3>
-            <ul className="list-disc list-inside">
-              <li>
-                The ‘Ask to be New Roommate’ interaction now verifies that the
-                participating Sims do not belong to the same household. Roommates are
-                fully compatible. A Sim added by this mod can ask an NPC Sim (who should
-                not be selectable at the time of using the interaction) to be a new
-                roommate, and they will be correctly added to the household of the Sim who
-                initiated the interaction.
-              </li>
-              <li>
-                A large part of the mod’s source code was refactored. The logging system
-                was improved to detect potential issues within
-              </li>
-            </ul>
-          </li>
-          <li>
-            <h3>
-              V1.1.2 - 09-04-2024 -{" "}
-              <a
-                href="https://www.mediafire.com/file/phxhcfduz2qjmc1/DQuiet_SimControlHub_V1.1.2.zip/file"
-                className="link font-semibold"
-              >
-                Download
-              </a>
-            </h3>
-            <ul className="list-disc list-inside">
-              <li>
-                A bug was fixed that prevented an added Sim from entering the active
-                household’s lot after using the ‘Visit’ interaction.
-              </li>
-              <li>
-                A notification was added to inform that a Sim will take a day off from
-                their career when performing any task or profession in the current area.
-                Additionally, the method for taking a career day off has been improved. It
-                now uses a PTO without deducting accumulated days, impacting statistics,
-                or affecting work performance.
-              </li>
-              <li>
-                The mod menu has been moved to the Actions category in the Pie Menu.
-              </li>
-            </ul>
-          </li>
-          <li>
-            <h3>
-              V1.1.3 - 09-05-2024 -{" "}
-              <a
-                href="https://www.mediafire.com/file/jst72tl7s0dohpm/DQuiet_SimControlHub_V1.1.3.zip/file"
-                className="link font-semibold"
-              >
-                Download
-              </a>
-            </h3>
-            <ul className="list-disc ml-5">
-              <li>
-                <p>
-                  Hotfix to resolve a LastException error occurring during game load. This
-                  is a minor issue in the Logger that does not affect the player.
-                </p>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <h3>
-              V1.1.4 - 09-08-2024 -{" "}
-              <a
-                href="https://www.mediafire.com/file/r1c46ede1qxulxb/DQuiet_SimControlHub_v1.1.4.zip/file"
-                className="link font-semibold"
-              >
-                Download
-              </a>
-            </h3>
-            <ul className="list-disc ml-5">
-              <li>
-                Fixed a rare bug that caused a LastException when initializing a zone
-                because the mod attempted to access a non-existent sim instance.
-              </li>
-              <li>
-                Fixed an error that caused an exception when a homeless Sim was added to
-                the list of selectable Sims and a new zone was initialized. This was due
-                to an attempt to load a non-existent zone.
-              </li>
-              <li>
-                The mod’s persistence system has been unified. It now uses a single JSON
-                file to save configurations and states. The CFG file can be deleted as it
-                is no longer necessary.
-              </li>
-              <li>
-                Various fixes in the logging system of the mod. The mod will no longer
-                create a .log file unless an internal error occurs. You can delete the
-                .log file if you don’t want it to take up unnecessary space.
-              </li>
-            </ul>
           </li>
           <li>
             <h3>
@@ -264,6 +127,207 @@ const ReleaseNotes = () => {
                 Sim from entering a home lot.
               </li>
             </ul>
+          </li>
+          <li>
+            <h3>
+              V1.1.4 - 09-08-2024 -{" "}
+              <a
+                href="https://www.mediafire.com/file/r1c46ede1qxulxb/DQuiet_SimControlHub_v1.1.4.zip/file"
+                className="link font-semibold"
+              >
+                Download
+              </a>
+            </h3>
+            <ul className="list-disc ml-5">
+              <li>
+                Fixed a rare bug that caused a LastException when initializing a zone
+                because the mod attempted to access a non-existent sim instance.
+              </li>
+              <li>
+                Fixed an error that caused an exception when a homeless Sim was added to
+                the list of selectable Sims and a new zone was initialized. This was due
+                to an attempt to load a non-existent zone.
+              </li>
+              <li>
+                The mod’s persistence system has been unified. It now uses a single JSON
+                file to save configurations and states. The CFG file can be deleted as it
+                is no longer necessary.
+              </li>
+              <li>
+                Various fixes in the logging system of the mod. The mod will no longer
+                create a .log file unless an internal error occurs. You can delete the
+                .log file if you don’t want it to take up unnecessary space.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>
+              V1.1.3 - 09-05-2024 -{" "}
+              <a
+                href="https://www.mediafire.com/file/jst72tl7s0dohpm/DQuiet_SimControlHub_V1.1.3.zip/file"
+                className="link font-semibold"
+              >
+                Download
+              </a>
+            </h3>
+            <ul className="list-disc ml-5">
+              <li>
+                <p>
+                  Hotfix to resolve a LastException error occurring during game load. This
+                  is a minor issue in the Logger that does not affect the player.
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>
+              V1.1.2 - 09-04-2024 -{" "}
+              <a
+                href="https://www.mediafire.com/file/phxhcfduz2qjmc1/DQuiet_SimControlHub_V1.1.2.zip/file"
+                className="link font-semibold"
+              >
+                Download
+              </a>
+            </h3>
+            <ul className="list-disc list-inside">
+              <li>
+                A bug was fixed that prevented an added Sim from entering the active
+                household’s lot after using the ‘Visit’ interaction.
+              </li>
+              <li>
+                A notification was added to inform that a Sim will take a day off from
+                their career when performing any task or profession in the current area.
+                Additionally, the method for taking a career day off has been improved. It
+                now uses a PTO without deducting accumulated days, impacting statistics,
+                or affecting work performance.
+              </li>
+              <li>
+                The mod menu has been moved to the Actions category in the Pie Menu.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>
+              V1.1.1 - 08-31-2024 -{" "}
+              <a
+                href="https://www.mediafire.com/file/i0xiaer0gnkzwyh/DQuiet_SimControlHub_v1.1.1.zip/file"
+                className="link font-semibold"
+              >
+                Download
+              </a>
+            </h3>
+            <ul className="list-disc list-inside">
+              <li>
+                The ‘Ask to be New Roommate’ interaction now verifies that the
+                participating Sims do not belong to the same household. Roommates are
+                fully compatible. A Sim added by this mod can ask an NPC Sim (who should
+                not be selectable at the time of using the interaction) to be a new
+                roommate, and they will be correctly added to the household of the Sim who
+                initiated the interaction.
+              </li>
+              <li>
+                A large part of the mod’s source code was refactored. The logging system
+                was improved to detect potential issues within
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>
+              V1.1.0 - 08-30-2024 -{" "}
+              <a
+                href="https://www.mediafire.com/file/zerhipioldfwzmj/DQuiet_Sim_Control_Hub_v1.1.0.zip/file"
+                className="link font-semibold"
+              >
+                Download
+              </a>
+            </h3>
+            <ul className="list-inside list-disc">
+              <li>
+                A problem with infinite loading screens was fixed when a homeless sim is
+                the last to leave the zone using the ‘Go Home’ interaction. This issue
+                occurred because the game attempted to load the sim’s home lot. Now, when
+                an added selectable sim leaves the zone, loading a new zone will be
+                avoided, allowing the player to switch control to another sim
+              </li>
+              <li>
+                A critical error that could halt the game and cause various exceptions was
+                fixed when an added selectable sim attended their career and the player
+                decided to change zones. This issue occurred because the AwayActionTracker
+                was not properly stopped, causing the career scheduler to attempt to
+                access unavailable information.
+              </li>
+              <li>
+                A problem was fixed where sims performing important tasks in the zone
+                would abandon them to attend their careers. Now, when it’s time for their
+                career to start, the workday will be skipped without any performance loss,
+                allowing the sim to complete any pending tasks in the zone
+              </li>
+              <li>
+                When a selectable sim present in the zone is added during work hours, the
+                workday will be skipped without any performance loss.
+              </li>
+              <li>
+                When a selectable sim who is not present in the zone is added during work
+                hours, they will automatically attend their career, making up for the lost
+                work hours. Consequently, they will not incur any performance or money
+                penalties.
+              </li>
+              <li>
+                There are certain generic careers intended solely for NPCs or homeless
+                sims, such as variations of Nanny, Barista, and Stall Vendor. These
+                careers previously caused issues that prevented these sims from performing
+                their tasks correctly in the active zone when they were added as
+                selectable sims, as they had to attend these careers. Now, these careers
+                will be ignored, and when it’s time for them to start, they will be
+                automatically canceled without any penalties. An example of this is the
+                Live in Services mod by LittleMsSam. The hired NPCs could not be
+                controlled properly as they would attend their career, entering a Rabbit
+                Hole from which they could not exit.
+              </li>
+              <li>Several minor bugs were fixed.</li>
+            </ul>
+          </li>
+          <li>
+            <h3>
+              V1.1.0-beta.1 - 08-28-2024 -{" "}
+              <a
+                href="https://www.mediafire.com/file/bi7upnhbbvbkzah/DQuiet_Sim_Control_Hub_v1.1-beta.1.zip/file"
+                className="link font-semibold"
+              >
+                Download
+              </a>
+            </h3>
+            <p>
+              The ability to add Dogs, Cats, and Horses to the list of selectable Sims has
+              been added. They can be controlled using the cheat code
+              <i> 'pets.toggle_selectable_pets'</i>. This command can be enabled
+              using&nbsp;
+              <a
+                href="https://www.patreon.com/posts/cheat-fix-for-22697405"
+                className="link"
+              >
+                TwistedMexi’s All Cheats
+              </a>
+              &nbsp;or&nbsp;
+              <a
+                href="https://modthesims.info/d/678890/selectable-pets-always.html"
+                className="link"
+              >
+                charitycodes Selectable Pets Always
+              </a>
+            </p>
+          </li>
+          <li>
+            <h3>
+              V1.0.0 - 08-27-2024 -{" "}
+              <a
+                href="https://www.mediafire.com/file/pzy79qvrbceggd4/DQuiet_Sim_Control_Hub_v1.0.0.zip/file"
+                className="link font-semibold"
+              >
+                Download
+              </a>
+            </h3>
+            <p>First release</p>
           </li>
         </ul>
       </CollapsibleSection>
