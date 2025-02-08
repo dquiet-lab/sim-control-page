@@ -9,7 +9,7 @@ const ReleaseNotes = () => {
             <h3 className="text-lg font-bold">
               V1.3.1 - 02-08-2025 -{" "}
               <a
-                href="https://www.mediafire.com/file/3ieroo4hp4m72um/DQuiet_SimControlHub_v1.3.1.7z/file"
+                href="https://www.mediafire.com/file/oxz0i6u0zhmkdny/DQuiet_SimControlHub_v1.3.1.7z/file"
                 className="link font-semibold"
               >
                 Download
