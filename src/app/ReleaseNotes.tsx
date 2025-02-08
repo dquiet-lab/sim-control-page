@@ -4,9 +4,43 @@ const ReleaseNotes = () => {
   return (
     <section className="grid w-full gap-3 p-3">
       <CollapsibleSection title="Download Links / Release Notes">
-        <ul className="flex flex-col gap-3 list-disc ml-6">
+        <ul className="flex flex-col gap-3 ml-6">
           <li>
-            <h3>
+            <h3 className="text-lg font-bold">
+              V1.3.1 - 02-08-2025 -{" "}
+              <a
+                href="https://www.mediafire.com/file/3ieroo4hp4m72um/DQuiet_SimControlHub_v1.3.1.7z/file"
+                className="link font-semibold"
+              >
+                Download
+              </a>
+            </h3>
+            <ul className="list-disc ml-5">
+              <li>
+                Enhanced the triggering mechanism for Discovery Quests when controlling an
+                added selectable sim. Now, the Discovery Quest will only activate when you
+                are controlling a sim from the active household. Previously, it would
+                trigger using the first available sim from the active household, which
+                required iterating over every sim in the household, making it a bit
+                inefficient.
+              </li>
+              <li>
+                Fixed Exceptions and Errors Caused by Sim Death: Resolved exceptions and
+                errors that occurred when an sim, belonging to a household without another
+                member capable of living independently, died. The mod now checks if there
+                are other members in the household upon an sim's death and removes all
+                added selectable sims if necessary.
+              </li>
+              <li>
+                Updated French Translation, courtesy of user{" "}
+                <a href="https://luniversims.fr/profile/44799-heidi137/" className="link">
+                  heidi137 - luniversims.fr
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3 className="text-lg font-bold">
               V1.3.0 - 02-07-2025 -{" "}
               <a
                 href="https://www.mediafire.com/file/wuwhpt9ay1znmge/DQuiet_SimControlHub_v1.3.0.7z/file"
@@ -14,63 +48,71 @@ const ReleaseNotes = () => {
               >
                 Download
               </a>
-              <ul className="list-disc ml-5">
-                <li>
-                  Part of the code has been updated to ensure better compatibility with
-                  the latest version of the game. PC: 1.112.519.1020 / Mac: 1.112.519.1220
-                </li>
-                <li>
-                  Travel Groups-related interactions have been removed from the Pie Menu
-                  and are now exclusively available in the Relationship Panel. This change
-                  not only reduces loading times for the Pie Menu but also resolves
-                  several issues previously associated with these interactions.
-                </li>
-                <li>
-                  Situation detection for each lot has been enhanced. The mod can now
-                  dynamically detect all available situations through the Zone Director,
-                  Open Street Director, and Venue Service. This allows the mod to add or
-                  remove Sims based on whether they are controlled by the player or not,
-                  ensuring smoother gameplay and better management of in-game scenarios.
-                </li>
-                <li>
-                  A minor bug causing internal exceptions within the mod when interacting
-                  with certain objects or animals in the Relationship Panel has been
-                  resolved. Examples of affected items include the Potty Mouth 2.0 talking
-                  toilet and Grim Deluxe Ascendant Crow.
-                </li>
-                <li>
-                  Fixed a minor bug where the active Sim would change when loading a new
-                  zone. Now, the active Sim will remain consistent during travel or zone
-                  loading.
-                </li>
-                <li>
-                  Several bugs related to careers and Rabbit Holes have been resolved.
-                </li>
-                <li>
-                  The Debug Mode has been improved to provide clearer and more descriptive
-                  messages. This update makes it easier to identify and troubleshoot
-                  potential bugs within the game, streamlining the debugging process for
-                  both developers and players.
-                </li>
-                <li>
-                  The code has been refactored and various minor bugs have been resolved
-                  to enhance the overall performance and stability of the mod. These
-                  changes aim to provide a smoother and more reliable experience for
-                  users. Additionally, an open-source version of the mod may be released
-                  in the future, allowing the community to contribute to its maintenance
-                  and development.
-                </li>
-                <li>
-                  In the coming days, I will release more updates to address issues and
-                  implement user-requested features. Additionally, I will review reported
-                  bugs. So far, I haven't encountered any major issues while using this
-                  mod.
-                </li>
-              </ul>
             </h3>
+            <ul className="list-disc ml-5">
+              <li>
+                Part of the code has been updated to ensure better compatibility with the
+                latest version of the game. PC: 1.112.519.1020 / Mac: 1.112.519.1220
+              </li>
+              <li>
+                Relocated Travel Groups Interactions: Travel Groups-related interactions
+                have been removed from the Pie Menu and are now exclusively accessible
+                through the Relationship Panel. This change improves performance by
+                reducing Pie Menu loading times and resolves several issues previously
+                linked to these interactions.
+              </li>
+              <li>
+                Enhanced Situation Detection for Lots: The mod now dynamically detects all
+                available situations within the Zone Director, Open Street Director, and
+                Venue Service. It selectively stops only conflicting situations, resolving
+                previous issues. For example, when making a sim selectable, the mod no
+                longer incorrectly stops club gathering situations. This improvement
+                ensures smoother gameplay and fewer disruptions.
+              </li>
+              <li>
+                Fixed Internal Exceptions: A minor bug causing internal exceptions within
+                the mod when interacting with certain objects or animals in the
+                Relationship Panel has been resolved. This includes interactions with
+                items such as the Potty Mouth 2.0 talking toilet and the Grim Deluxe
+                Ascendant Crow.
+              </li>
+              <li>
+                Fixed Active Sim Consistency: Resolved a minor bug where the active Sim
+                would unintentionally change when loading a new zone. The active Sim now
+                remains consistent during travel or zone transitions, ensuring a smoother
+                gameplay experience.
+              </li>
+              <li>
+                Fixed Career and Rabbit Hole Issues: Resolved several bugs related to
+                careers and Rabbit Holes. This includes issues such as selectable Sims
+                appearing in lots when they should be working. These fixes ensure Sims
+                behave as expected during work hours and maintain proper immersion.
+              </li>
+              <li>
+                Improved Debug Mode: The Debug Mode has been enhanced to deliver clearer
+                and more descriptive messages. This update facilitates easier
+                identification and troubleshooting of potential bugs within the game,
+                streamlining the debugging process for both developers and players.
+              </li>
+              <li>
+                Code Refactor and Bug Fixes The code has been refactored, and several
+                minor bugs have been resolved to enhance the overall performance and
+                stability of the mod. These changes aim to provide users with a smoother
+                and more reliable experience. Additionally, I'm considering the release of
+                an open-source version of the mod in the future, which would allow the
+                community to contribute to its maintenance and development.
+              </li>
+              <li>
+                In the next few days, I’ll be rolling out more updates to tackle some
+                issues and add features that you’ve requested. I’ll also be taking a
+                closer look at the bugs you’ve reported. So far, I haven’t run into any
+                major problems while using the mod, which is great news! Stay tuned for
+                more updates!
+              </li>
+            </ul>
           </li>
           <li>
-            <h3>
+            <h3 className="text-lg font-bold">
               V1.2.0 - 09-16-2024 -{" "}
               <a
                 href="https://www.mediafire.com/file/xuqcndp1gjichaw/DQuiet_SimControlHub_V1.2.0.zip/file"
@@ -104,7 +146,7 @@ const ReleaseNotes = () => {
                 .
               </li>
               <li>
-                Fixed an issue where a selectable NPC on their home lot was added to the
+                Fixed an issue where a selectable sim on their home lot was added to the
                 GreetedPlayerVisitingNPC situation, which limited their autonomy within
                 their home.
               </li>
@@ -115,11 +157,12 @@ const ReleaseNotes = () => {
                 situation situation_FanStan_CelebritySims.
               </li>
               <li>
-                A bug that caused selectable NPCs to be added to the
-                GreetedNPCVisitingPlayer situation when they were inside the lot before
-                loading a zone, thereby limiting their autonomy, has been fixed. Now, they
-                will behave like any other player and adhere to the autonomy settings
-                configured in the game options.
+                Fixed Autonomy Limitation Bug: A bug causing selectable Sims to be
+                incorrectly added to the GreetedNPCVisitingPlayer situation when they were
+                inside the lot during zone loading has been resolved. This previously
+                restricted their autonomy. Now, these Sims will behave like regular
+                players and fully adhere to the autonomy settings configured in the game
+                options.
               </li>
               <li>
                 The update process for selectable Sims’ situations when starting a zone
@@ -129,7 +172,7 @@ const ReleaseNotes = () => {
             </ul>
           </li>
           <li>
-            <h3>
+            <h3 className="text-lg font-bold">
               V1.1.4 - 09-08-2024 -{" "}
               <a
                 href="https://www.mediafire.com/file/r1c46ede1qxulxb/DQuiet_SimControlHub_v1.1.4.zip/file"
@@ -161,7 +204,7 @@ const ReleaseNotes = () => {
             </ul>
           </li>
           <li>
-            <h3>
+            <h3 className="text-lg font-bold">
               V1.1.3 - 09-05-2024 -{" "}
               <a
                 href="https://www.mediafire.com/file/jst72tl7s0dohpm/DQuiet_SimControlHub_V1.1.3.zip/file"
@@ -180,7 +223,7 @@ const ReleaseNotes = () => {
             </ul>
           </li>
           <li>
-            <h3>
+            <h3 className="text-lg font-bold">
               V1.1.2 - 09-04-2024 -{" "}
               <a
                 href="https://www.mediafire.com/file/phxhcfduz2qjmc1/DQuiet_SimControlHub_V1.1.2.zip/file"
@@ -207,7 +250,7 @@ const ReleaseNotes = () => {
             </ul>
           </li>
           <li>
-            <h3>
+            <h3 className="text-lg font-bold">
               V1.1.1 - 08-31-2024 -{" "}
               <a
                 href="https://www.mediafire.com/file/i0xiaer0gnkzwyh/DQuiet_SimControlHub_v1.1.1.zip/file"
@@ -218,12 +261,12 @@ const ReleaseNotes = () => {
             </h3>
             <ul className="list-disc list-inside">
               <li>
-                The ‘Ask to be New Roommate’ interaction now verifies that the
-                participating Sims do not belong to the same household. Roommates are
-                fully compatible. A Sim added by this mod can ask an NPC Sim (who should
-                not be selectable at the time of using the interaction) to be a new
-                roommate, and they will be correctly added to the household of the Sim who
-                initiated the interaction.
+                The 'Ask to be New Roommate' interaction now includes a verification step
+                to ensure that the participating Sims do not belong to the same household.
+                A Sim added through this mod can now request an NPC Sim (who should not be
+                selectable during the interaction) to become a new roommate. If accepted,
+                the NPC will be correctly added to the household of the Sim who initiated
+                the request.
               </li>
               <li>
                 A large part of the mod’s source code was refactored. The logging system
@@ -232,7 +275,7 @@ const ReleaseNotes = () => {
             </ul>
           </li>
           <li>
-            <h3>
+            <h3 className="text-lg font-bold">
               V1.1.0 - 08-30-2024 -{" "}
               <a
                 href="https://www.mediafire.com/file/zerhipioldfwzmj/DQuiet_Sim_Control_Hub_v1.1.0.zip/file"
@@ -288,7 +331,7 @@ const ReleaseNotes = () => {
             </ul>
           </li>
           <li>
-            <h3>
+            <h3 className="text-lg font-bold">
               V1.1.0-beta.1 - 08-28-2024 -{" "}
               <a
                 href="https://www.mediafire.com/file/bi7upnhbbvbkzah/DQuiet_Sim_Control_Hub_v1.1-beta.1.zip/file"
@@ -318,7 +361,7 @@ const ReleaseNotes = () => {
             </p>
           </li>
           <li>
-            <h3>
+            <h3 className="text-lg font-bold">
               V1.0.0 - 08-27-2024 -{" "}
               <a
                 href="https://www.mediafire.com/file/pzy79qvrbceggd4/DQuiet_Sim_Control_Hub_v1.0.0.zip/file"

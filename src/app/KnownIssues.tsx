@@ -47,20 +47,25 @@ const KnownIssues = () => {
             </p>
           </li>
           <li>
-            <p>
+            <p className="line-through">
               If one or more selectable Sims are added using this mod and a member of the
               active household dies, leaving no remaining Sims in the household, multiple
               issues and exceptions may occur. To prevent this, avoid such scenarios
               entirely. Additionally, do not attempt to save the game if this situation
               arises.
             </p>
-            <p className="text-green-400">Fix in progress</p>
+            <p className="text-green-400 italic">Fixed.</p>
           </li>
           <li>
-            No significant issues were detected when adopting a child while using a Sim
-            added to the Skewer with this mod.
-            <br />
-            <i className="text-yellow-400">It requires further testing.</i>
+            <p className="line-through">
+              Unexpected behaviors may occur when adopting a child while using an added
+              selectable NPC.
+            </p>
+            <p className="text-green-400 italic">
+              No significant issues were detected when adopting a child while using an
+              added selectable NPC. If you notice any unexpected behavior, please feel
+              free to report it.
+            </p>
           </li>
           <li>
             When adopting a pet while controlling a Sim from another household, the pet
@@ -70,6 +75,13 @@ const KnownIssues = () => {
             being added to Household A. The potential errors this may cause are currently
             unclear, so it is strongly recommended to avoid saving the game until you have
             confirmed that no additional issues have arisen.
+            <br />
+            <i className="text-yellow-400">It requires further testing and reports.</i>
+          </li>
+          <li>
+            Some users have reported that this mod may cause the follow cam to stop
+            working unexpectedly. I'm currently looking into this issue and appreciate
+            your patience as I work towards a resolution.
             <br />
             <i className="text-yellow-400">It requires further testing and reports.</i>
           </li>
