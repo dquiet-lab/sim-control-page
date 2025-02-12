@@ -203,7 +203,7 @@ export default function Home() {
       <section className="grid w-full gap-3 px-3 py-5 justify-center" id="downloads">
         <h2 className="text-3xl font-bold text-center">Download Latest</h2>
         <a
-          href="https://www.mediafire.com/file/oxz0i6u0zhmkdny/DQuiet_SimControlHub_v1.3.1.7z/file"
+          href="https://www.mediafire.com/file/8c6pzkfz8akh7d7/DQuiet_SimControlHub_v1.3.2.zip/file"
           className="font-semibold hover:shadow-lg p-3 bg-primary rounded-xl text-center"
         >
           Sim Control Hub V1.3.1 - MediaFire

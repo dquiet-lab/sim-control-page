@@ -7,6 +7,45 @@ const ReleaseNotes = () => {
         <ul className="flex flex-col gap-3 ml-6">
           <li>
             <h3 className="text-lg font-bold">
+              V1.3.2 - 02-11-2025 -{" "}
+              <a
+                href="https://www.mediafire.com/file/8c6pzkfz8akh7d7/DQuiet_SimControlHub_v1.3.2.zip/file"
+                className="link font-semibold"
+              >
+                Download
+              </a>
+            </h3>
+            <ul className="list-disc ml-5">
+              <li>
+                Resolved an issue where the follow camera, activated via the "Lock the
+                Camera" interaction or by right-clicking a selectable Sim's portrait,
+                would stop following the Sim. This occurred because the mod unnecessarily
+                updated selectable Sims' information whenever any Sim in the area updated
+                their work info. Updates now occur only when necessary, which should
+                slightly improve the mod's performance.
+              </li>
+              <li>
+                An optional fix for the follow camera has been added. In the vanilla game,
+                there is a behavior that appears to be a bug, causing the follow camera to
+                be unnecessarily disabled whenever any Sim from the active household
+                updates their information. For example, this occurs when a Sim from the
+                active household finishes their workday. This behavior is more noticeable
+                in active careers.
+              </li>
+              <li>
+                Updated the settings menu texts to clearly indicate whether an option is
+                enabled or disabled, enhancing usability and clarity.
+              </li>
+              <li>
+                Enhanced detection of background situations in specific zones such as
+                Alien World of Sixam and Mt. Komorebi's Summit. This ensures both player
+                Sims and NPCs are added to their corresponding background situations,
+                allowing their autonomy to adjust correctly.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3 className="text-lg font-bold">
               V1.3.1 - 02-08-2025 -{" "}
               <a
                 href="https://www.mediafire.com/file/oxz0i6u0zhmkdny/DQuiet_SimControlHub_v1.3.1.7z/file"
