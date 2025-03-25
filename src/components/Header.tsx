@@ -1,4 +1,4 @@
-function Header() {
+export const Header = () => {
   return (
     <header className="flex justify-center p-3">
       <div className="flex flex-col place-items-end">
@@ -9,5 +9,4 @@ function Header() {
       </div>
     </header>
   );
-}
-export default Header;
+};

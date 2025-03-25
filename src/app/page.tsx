@@ -1,9 +1,9 @@
-import HorizontalRule from "@/components/HorizontalRule";
-import TechnicalDetails from "./TechnicalDetails";
-import Interactions from "./Interactions";
-import KnownIssues from "./KnownIssues";
-import CollapsibleSection from "@/components/CollapsibleSection";
-import ReleaseNotes from "./ReleaseNotes";
+import { HorizontalRule } from "@/components/HorizontalRule";
+import { TechnicalDetails } from "./TechnicalDetails";
+import { Interactions } from "./Interactions";
+import { KnownIssues } from "./KnownIssues";
+import { CollapsibleSection } from "@/components/CollapsibleSection";
+import { ReleaseNotes } from "./ReleaseNotes";
 
 export default function Home() {
   return (
@@ -36,6 +36,22 @@ export default function Home() {
             <p>
               You can hide this mod in the Shift + Click menu or access it via the
               Relationship Panel
+            </p>
+          </li>
+          <li>
+            <h3 className="font-semibold">Travel Group Management</h3>
+            <p>
+              You now have full control travel groups. Create, modify, or delete Vacation
+              and Stay Over groups, with the ability to add or remove individual Sims at
+              any time.
+            </p>
+          </li>
+          <li>
+            <h3 className="font-semibold">Situations Management (NEW FEATURE)</h3>
+            <p>
+              Gain complete control over your Sims' situations. You can now add them to
+              any lot situation such as 'Stay The Night' and 'Visit', or remove them as
+              needed for full gameplay customization.
             </p>
           </li>
         </ul>
@@ -203,23 +219,23 @@ export default function Home() {
       <section className="grid w-full gap-3 px-3 py-5 justify-center" id="downloads">
         <h2 className="text-3xl font-bold text-center">Download Latest</h2>
         <a
-          href="https://www.mediafire.com/file/8c6pzkfz8akh7d7/DQuiet_SimControlHub_v1.3.2.zip/file"
-          className="font-semibold hover:shadow-lg p-3 bg-primary rounded-xl text-center"
-        >
-          Sim Control Hub V1.3.1 - MediaFire
-        </a>
-        <a
           href="https://www.curseforge.com/sims4/mods/sim-control-hub"
           className="font-semibold hover:shadow-lg p-3 w-ming bg-black text-white rounded-xl text-center border-white"
         >
-          View on CurseForge
+          CurseForge
         </a>
         <a
           href="https://modthesims.info/download.php?t=686467"
           className="font-semibold hover:shadow-lg p-3 w-ming bg-gray-700 text-white rounded-xl text-center border-white"
           aria-disabled
         >
-          View on Mod The Sims
+          Mod The Sims
+        </a>
+        <a
+          href="https://www.mediafire.com/file/5ecvsjlf4r6b6gi/DQuiet_SimControlHub_v1.3.4.zip/file"
+          className="font-semibold hover:shadow-lg p-3 bg-primary rounded-xl text-center"
+        >
+          Sim Control Hub V1.3.4 - MediaFire
         </a>
       </section>
     </main>

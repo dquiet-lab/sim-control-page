@@ -1,6 +1,6 @@
-import CollapsibleSection from "@/components/CollapsibleSection";
+import { CollapsibleSection } from "@/components/CollapsibleSection";
 
-const Interactions = () => {
+export const Interactions = () => {
   return (
     <section className="grid w-full gap-3 p-3">
       <CollapsibleSection title="List of Interactions">
@@ -8,31 +8,28 @@ const Interactions = () => {
           <li>
             <h3 className="font-semibold">Add selectable sims</h3>
             <p>
-              Add a selectable Sim to the Skewer. It will be added to the
-              default situation of a playable sim brought to the zone with the
-              ‘Bring Here’ interaction. For example, if the lot is a café, the
-              Sim will be added to the situation{" "}
-              <i>"situation_Cafe_GenericCustomer"</i>.
+              Add a selectable Sim to the Skewer. It will be added to the default
+              situation of a playable sim brought to the zone with the ‘Bring Here’
+              interaction. For example, if the lot is a café, the Sim will be added to the
+              situation <i>"situation_Cafe_GenericCustomer"</i>.
             </p>
           </li>
           <li>
             <h3 className="font-semibold">Remove Selectable Sim</h3>
             <p>
-              Remove a selectable sim from the Skewer. What happens next depends
-              on the situation the Sim is in:
+              Remove a selectable sim from the Skewer. What happens next depends on the
+              situation the Sim is in:
             </p>
             <p>
-              If the Sim is part of a specific situation (e.g., a hired
-              mixologist), they will return to their previous role without
-              significant changes.
+              If the Sim is part of a specific situation (e.g., a hired mixologist), they
+              will return to their previous role without significant changes.
             </p>
             <p>
-              If the Sim is not involved in any situation (i.e., does not have a
-              role such as Stall Vendor) and is within the active lot, they will
-              be assigned a default role based on the lot type. For example, if
-              the lot is a cafe, the Sim will assume the role of 'Cafe
-              Customer.' If the Sim is outside the lot, they will return home
-              after a few minutes.
+              If the Sim is not involved in any situation (i.e., does not have a role such
+              as Stall Vendor) and is within the active lot, they will be assigned a
+              default role based on the lot type. For example, if the lot is a cafe, the
+              Sim will assume the role of 'Cafe Customer.' If the Sim is outside the lot,
+              they will return home after a few minutes.
             </p>
           </li>
           <li>
@@ -40,57 +37,33 @@ const Interactions = () => {
             <p>Remove all selectable sims added to the Skewer by this mod.</p>
           </li>
           <li>
-            <h3 className="font-semibold">
-              Show in Cheat Menu / Show in Pie Menu
-            </h3>
-            <p>
-              Allows you to hide or unhide this mod in the Cheat menu (you must
-              activate the ‘testingcheats on’ command and access it by Shift +
-              Clicking on any Sim).
-            </p>
-          </li>
-          <li>
-            <h3 className="font-semibold">
-              Show in Relationship Panel / Don&apos;t show in the Relationship
-              Panel
-            </h3>
-            <p>
-              These interactions allow enabling or disabling the use of this mod
-              within the relationship panel by clicking on any sim. By default,
-              this feature is enabled.
-            </p>
-          </li>
-          <li>
             <h3 className="font-semibold">Start a Stay Over</h3>
             <p>
-              Create an indefinite-duration ‘Stay Over.’ It can only be used
-              when you are in the residence of the active household (i.e., the
-              household you selected to play).
+              Create an indefinite-duration ‘Stay Over.’ It can only be used when you are
+              in the residence of the active household (i.e., the household you selected
+              to play).
             </p>
           </li>
           <li>
             <h3 className="font-semibold">End this sim&apos;s Travel Group</h3>
             <p>
-              Ends the ‘Stay Over’ or vacation group that this Sim is part of.
-              All group members will be released.
+              Ends the ‘Stay Over’ or vacation group that this Sim is part of. All group
+              members will be released.
             </p>
           </li>
           <li>
             <h3 className="font-semibold">Add to Travel Group</h3>
             <p>
-              If the active household has a ‘Stay Over’ group in their home lot,
-              the target sim will be added to it. If no ‘Stay Over’ group
-              exists, the target sim will be added to the Travel Group of the
-              active selectable sim.
+              If the active household has a ‘Stay Over’ group in their home lot, the
+              target sim will be added to it. If no ‘Stay Over’ group exists, the target
+              sim will be added to the Travel Group of the active selectable sim.
             </p>
           </li>
           <li>
-            <h3 className="font-semibold">
-              Remove from their current Travel Group
-            </h3>
+            <h3 className="font-semibold">Remove from their current Travel Group</h3>
             <p>
-              Remove the Sim from their ‘Stay Over’ or vacation group. If the
-              group becomes empty, it will be automatically destroyed.
+              Remove the Sim from their ‘Stay Over’ or vacation group. If the group
+              becomes empty, it will be automatically destroyed.
             </p>
           </li>
         </ul>

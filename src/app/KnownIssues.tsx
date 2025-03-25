@@ -1,6 +1,6 @@
-import CollapsibleSection from "@/components/CollapsibleSection";
+import { CollapsibleSection } from "@/components/CollapsibleSection";
 
-const KnownIssues = () => {
+export const KnownIssues = () => {
   return (
     <section className="grid w-full gap-3 p-3">
       <CollapsibleSection title="Known Issues">
